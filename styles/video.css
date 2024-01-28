@@ -52,10 +52,10 @@ p {
 
 /* Elements
 --------------------------------------------- */
-section,
+/* section,
 aside {
 	padding: 0 1rem;
-}
+} */
 
 /* Links
 --------------------------------------------- */
@@ -81,13 +81,13 @@ a:focus {
 --------------------------------------------------------------*/
 h1, h2 {
   color: white;
-  font-family: Trebuchet MS;
+  font-family:'Questrial', sans-serif;
   font-weight: bold;
   text-align: center;
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 7rem;
   margin-top: 30vh; 
 }
 
@@ -113,22 +113,16 @@ h2 { font-size: 3rem; }
 /* Header
 --------------------------------------------- */
 .site-header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #4f1820;
-  min-height: 6.5rem;
+  display: block;
 }
-
-.site-logo {
+/* .site-logo {
   padding: 0;
 }
 
 .site-logo img {
   padding-left: 1rem;
   width: 6.5rem;
-}
+} */
 
 .site-navigation ul {
 	list-style: none;
@@ -138,7 +132,8 @@ h2 { font-size: 3rem; }
 	display: none;
 	position: absolute;
 	top: 6.5rem; 
-	background-color: #4f1820;
+	background: rgba(0, 0, 0, 0.25);
+  padding: 1rem 0 1rem 0;
 }
 
 
@@ -149,7 +144,7 @@ h2 { font-size: 3rem; }
 
 .site-navigation a {
   display: block;
-  font-family: 'Cabin', Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1rem;
   font-weight: 300;
   text-decoration: none;
@@ -174,38 +169,30 @@ h2 { font-size: 3rem; }
 }
 
 @media (min-width: 33.5em) {
-  /* enlarge the site logo */
-  .site-logo img {
-    padding-left: 1rem;
-    width: 7.5rem;
-  }
-
-  /* hide the hamburger  */
-  .menu-toggle {
-		display: none;
-	}
-
-  change the navigation links from columns to rows
-  .site-navigation ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-
+    /* hide the hamburger  */
+    .menu-toggle {
+      display: none;
+    }
   
-  .site-navigation ul,
-	.site-navigation.toggled ul {
-		display: flex;
-		justify-content: flex-end;
-		position: relative;
-		top: 0;
-    background-color: #4f1820;
-	}
-
-  /* enlarge the font when the screen is 43.5em to 49.9em */
-  .site-navigation a {
-  font-size: 1.2rem;
-  }
+    /* change the navigation links from columns to rows */
+    .site-navigation ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+   
+    .site-navigation ul,
+    .site-navigation.toggled ul {
+      display: flex;
+      justify-content: space-evenly;
+      position: relative;
+      top: 0;
+    }
+    
+    /* enlarge the font when the screen is 43.5em to 49.9em */
+    .site-navigation a {
+    font-size: 1.3rem;
+    }
 }
 
 @media (min-width: 50em) {
@@ -220,32 +207,59 @@ h2 { font-size: 3rem; }
 		display: none;
 	}
 
+
   /* enlarge the font when the screen is 43.5rem to 49.9rem */
   .site-navigation a {
   font-size: 1.4rem;
   }
 }
 
+
+/* Main
+--------------------------------------------- */
+.background-banner h1 {
+  font-size: 2rem;
+  text-shadow:  0px 2px #363635, 
+	  -2px 0px 2px #363635, 
+	  0px 2px 2px #363635;
+    margin-top: 2rem;
+}
+
+.background-banner h2 {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 33.5em) {
+  .background-banner h1 {
+    font-size: 4rem;
+    text-shadow:  0px 4px #363635, 
+      -3px 0px 4px #363635, 
+      0px 4px 4px #363635;
+      margin-top: 2rem;
+  }
+  
+  .background-banner h2 {
+    font-size: 2.5rem;
+  }
+}
+
+
+
 /* Footer
 --------------------------------------------- */
-
 
 /* #content-wrap {
   padding-bottom: 2.5rem;
 } */
 
 .footer{
-  position: absolute;
-  display: block;
   bottom: 0;
-  width: 100%;
-  height: 2.5rem;
-  background-color: beige;
+  width: 100%; 
+  background: rgba(0, 0, 0, 0.25);
+  align-self: auto;
 }
 
-
-
-/* footer h3 {
-  padding: 2rem;
+.footer h3 {
+  color: #fff;
   margin: 0;
-} */
+}
