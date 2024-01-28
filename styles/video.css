@@ -1,3 +1,15 @@
+/* Typography
+--------------------------------------------- */
+body{
+  margin:0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #4f1820;
+  background-color: #F0F7EE;
+}
+
 /* video background */
 #background-video {
   height: 100vh;
@@ -10,8 +22,63 @@
   bottom: 0;
   z-index: -1;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family:'Cabin', Arial, Helvetica, sans-serif;
+	margin: .5em 0;
+}
 
-/* page content */
+
+h1 {
+	font-size: 4rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+p {
+	margin: 0 0 1.5em;
+}
+
+
+/* Elements
+--------------------------------------------- */
+section,
+aside {
+	padding: 0 1rem;
+}
+
+/* Links
+--------------------------------------------- */
+a,
+a:visited { 
+	color: #090C02;
+	text-decoration: none;
+}
+
+nav a:hover,
+a:focus,
+a:active {
+	text-decoration: underline;
+  opacity: 0.8;
+}
+
+a:focus {
+	outline: 1px dotted;
+}
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
 h1, h2 {
   color: white;
   font-family: Trebuchet MS;
@@ -26,6 +93,7 @@ h1 {
 
 h2 { font-size: 3rem; }
 
+/* for smaller screens, a background image will be used in place of a background video */
 @media (max-width: 37.5rem) {
     #background-video { display: none; }
     body {
@@ -33,3 +101,151 @@ h2 { font-size: 3rem; }
       background-size: cover;
     }
 }
+
+.site-wrapper {
+	/* This is for very large screens */
+	max-width: 120rem;
+	margin: 0 auto;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Header
+--------------------------------------------- */
+.site-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #4f1820;
+  min-height: 6.5rem;
+}
+
+.site-logo {
+  padding: 0;
+}
+
+.site-logo img {
+  padding-left: 1rem;
+  width: 6.5rem;
+}
+
+.site-navigation ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	display: none;
+	position: absolute;
+	top: 6.5rem; 
+	background-color: #4f1820;
+}
+
+
+.site-navigation.toggled ul {
+	display: block;
+  background-color: #090C02;
+}
+
+.site-navigation a {
+  display: block;
+  font-family: 'Cabin', Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-toggle {
+	display: block;
+	background-color: transparent;
+	border: 0;
+	padding: 1rem;
+}
+
+.menu-toggle:focus {
+	border: 0;
+	outline: 1px dotted;
+}
+
+.site-navigation ul li {
+  list-style-type: none;
+  padding-right: 1rem;
+}
+
+@media (min-width: 33.5em) {
+  /* enlarge the site logo */
+  .site-logo img {
+    padding-left: 1rem;
+    width: 7.5rem;
+  }
+
+  /* hide the hamburger  */
+  .menu-toggle {
+		display: none;
+	}
+
+  change the navigation links from columns to rows
+  .site-navigation ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  
+  .site-navigation ul,
+	.site-navigation.toggled ul {
+		display: flex;
+		justify-content: flex-end;
+		position: relative;
+		top: 0;
+    background-color: #4f1820;
+	}
+
+  /* enlarge the font when the screen is 43.5em to 49.9em */
+  .site-navigation a {
+  font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 50em) {
+  /* enlarge the site logo for sites larger than 50rem*/
+  .site-logo img {
+    padding-left: 1rem;
+    width: 8.5rem;
+  }
+
+  /* hide the hamburger  */
+  .menu-toggle {
+		display: none;
+	}
+
+  /* enlarge the font when the screen is 43.5rem to 49.9rem */
+  .site-navigation a {
+  font-size: 1.4rem;
+  }
+}
+
+/* Footer
+--------------------------------------------- */
+
+
+/* #content-wrap {
+  padding-bottom: 2.5rem;
+} */
+
+.footer{
+  position: absolute;
+  display: block;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  background-color: beige;
+}
+
+
+
+/* footer h3 {
+  padding: 2rem;
+  margin: 0;
+} */
