@@ -9,3 +9,8 @@ mobile homepage photo (Saint Andrews station): https://www.pexels.com/photo/subw
 
 
 Video-background for homepage: https://blog.hubspot.com/website/video-background-css
+
+
+Colors:
+Carolina Blue: CCE6F4
+Royal Blue: 053a4c
