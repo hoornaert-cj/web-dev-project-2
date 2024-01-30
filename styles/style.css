@@ -95,15 +95,10 @@ body{
     font-size: 3rem; 
   }
 
-  
-  /* for smaller screens, a background image will be used in place of a background video */
-  @media (max-width: 37.5rem) {
-      #background-video { display: none; }
-      body {
-      background: url("../images/home-mobile.jpg") no-repeat;
-      background-size: cover;
-      }
+  p {
+    padding: 0 1rem;
   }
+
   
   .site-wrapper {
     /* This is for very large screens */
@@ -269,6 +264,7 @@ body{
       -2px 0px 2px #363635, 
       0px 2px 2px #363635;
   }
+
   
   .background-banner h2 {
     font-size: 2rem;
@@ -304,19 +300,88 @@ body{
   @media (min-width: 50em) {
     .background-banner h1 {
       font-size: 7rem;
-    }
-
-    /* .banner-subtext {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-    } */
-    
+    }    
   }
 
   /* Attractions
 --------------------------------------------- */
+.page-header {
+  position: relative;
+}
+.page-header h1 {
+  position: absolute;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin: auto;
+  top: 5.5rem; 
+  left: 0; 
+  bottom: 0; 
+  right: 0;
+  font-size: 2.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow:  0px 2px #363635, 
+    -2px 0px 2px #363635, 
+    0px 2px 2px #363635;
+}
 
+@media (min-width: 37.5em) {
+  .page-header h1 {
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid-attractions {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 15.5rem) 1fr;
+    grid-template-rows: auto;
+    gap: 1.5rem;
+    margin: 1rem;
+  }
+
+  .grid-attractions div {
+		display: block;
+		width: 100%;
+		height: 100%;
+		background-color: #ffffff;
+	}
+
+  .grid-attractions div:first-of-type {
+		grid-column: 2/3;
+	}
+
+  .grid-attractions .yonge-square {
+    grid-row: 2/3;
+		grid-column: 2/3;
+  }
+
+  .grid-attractions .royal-ontario {
+    grid-row: 2/3;
+		grid-column: 3/4;
+  }
+}
+
+@media (min-width: 50em) {
+  .page-header h1 {
+    font-size: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+  .grid-attractions {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 21rem) 1fr;
+    grid-template-rows: auto;
+    gap: 1.5rem;
+    margin: 1rem;
+  }
+}
+ 
 
 
    /* Footer
@@ -326,6 +391,15 @@ body{
 footer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.footer-home {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   position: absolute;
   padding: 1rem;
