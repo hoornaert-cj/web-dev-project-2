@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Toronto Credits</title>
-
+    <title>Toronto</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/normalize-fwd.css">
     <link rel="stylesheet" href="styles/header.css">
     <script src="scripts/navigation.js" defer></script>
@@ -41,20 +41,27 @@
             </div>
         </header>
 
-          <main>
-            <section class = "credits-bg"></section>
+        <main>
+            <section class="background-banner">
+                <video id="background-video" autoplay loop muted poster="images/home-mobile.jpg">
+                <source src="media/toronto.mp4" type="video/mp4">
+                </video>
+            
+                <!-- <h1>THIS IS TORONTO</h1> -->
+                <a href="media/toronto.mp4">
+              </a> 
+                </a>
+              </section>
+        </main>
 
-            <section>
-                <h2>This is some text for the Credits</h2>
-            </section>
-          </main>
-
+        <footer>
+          <section class="footer-section">
+              <p>&copy; 2024 Chris Hoornaert</p>
+          </section>
+          <section class="footer-section">
+              <p>For Educational Purposes only</p>
+          </section>
+      </footer>
     </div>
-
-    <footer>
-        <section class="footer">
-          <h3>&copy; 2024 Chris Hoornaert</h3>
-        </section>
-    </footer> 
   </body>
-  </html>
+</html>
