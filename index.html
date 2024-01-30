@@ -1,60 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Toronto</title>
-
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/normalize-fwd.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
     <script src="scripts/navigation.js" defer></script>
-</head>
 
-<body>
+  </head>
+
+  <body>
     <div class="site-wrapper">
-        <div class="video-container">
-            <div class="color-overlay"></div>
-            <video autoplay loop muted>
-                <source src="media/toronto.mp4" type="video/mp4">
-            </video>
-        </div>
-
         <header class="site-header">
-            <!-- This image was downloaded from Pexel.com -->
-            <!-- <a href="index.html" class="site-logo">
-                <img src="images/ch_logo.png" alt="Site logo">
-            </a> -->
+            <div class="wrapper site-header__wrapper">
+                <a href="index.html" class="site-logo"><img src="images/to_logo.png" alt="Toronto TO logo"/></a>
+                <nav class="site-navigation" id="site-navigation">
+                    <button class="menu-toggle" aria-controls="header-menu" aria-expanded="false" aria-label="Menu Toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
+                            <title>Menu Icon</title>
+                            <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"></path>
+                        </svg>
+                    </button>
         
-            <nav class="site-navigation" id="site-navigation">
-                <button class="menu-toggle" aria-controls="header-menu" aria-expanded="false" aria-label="Menu Toggle">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
-                        <title>Menu Icon</title>
-                        <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"></path>
-                    </svg>
-                </button>
-    
-                <ul class="nav-menu" id="header-menu">  
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#about">Attractions</a></li>
-                    <li><a href="parks.html">Parks</a></li>
+                    <ul class="nav-menu" id="header-menu">  
+                        <li><a href="header.html">Home</a></li>
+                        <li><a href="attractions.html">Attractions</a></li>
+                        <li><a href="parks.html">Parks</a></li>
                     <li><a href="credits.html">Credits</a></li>
                 </ul>
             </nav>
+            </div>
         </header>
-            <section class="video-bg">
 
-        <h1>This is Toronto</h1>
-        <a href="index.html">
-            <img src="images/Maple-Leaf-logo.svg" alt="a red maple leaf inside a black circle" height="87" width="100" />
-        </a>
         <main>
-           
-
+            <section class="background-banner">
+                <video id="background-video" autoplay loop muted poster="images/home-mobile.jpg">
+                <source src="media/toronto.mp4" type="video/mp4">
+                </video>
+            
+                <h1>Toronto</h1>
+                <h2 class = "banner-subtext">Canada's Financial Heart</h2>
+            </section>
         </main>
 
-</div>
-</body>
+        <footer>
+          <section class="footer-section">
+              <p>&copy; 2024 Chris Hoornaert</p>
+          </section>
+          <section class="footer-section">
+              <p>For Educational Purposes only</p>
+          </section>
+      </footer>
+    </div>
+  </body>
 </html>

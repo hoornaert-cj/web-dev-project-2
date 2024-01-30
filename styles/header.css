@@ -106,9 +106,9 @@ body{
   }
   
   .site-wrapper {
-      /* This is for very large screens */
-      max-width: 120rem;
-      margin: 0 auto;
+    /* This is for very large screens */
+    max-width: 120rem;
+    margin: 0 auto;
     position: relative;
     min-height: 100vh;
   }
@@ -116,10 +116,13 @@ body{
   /* Header
   --------------------------------------------- */
   .site-header {
+    position: fixed;
     display: flex;
-    position: relative;
     justify-content: space-between;
     align-items: center;
+    z-index: 2;
+    width: 100%;
+    height: 5rem;
     background-color: rgba(0, 0, 0, 0.3);
   }
 
@@ -249,19 +252,72 @@ body{
     }
   }
 
+     /* Main
+  --------------------------------------------- */
+  .background-banner {
+    position: relative;
+    top: 9.5rem;
+  }
+
+  .background-banner h1 {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow:  0px 2px #363635, 
+      -2px 0px 2px #363635, 
+      0px 2px 2px #363635;
+  }
+  
+  .background-banner h2 {
+    font-size: 2rem;
+    text-shadow:  0px 1px #fff, 
+      -1px 0px 1px #fff, 
+      0px 1px 1px #fff;
+  }
+
+
+  
+  @media (min-width: 37.5em) {
+    .background-banner h1 {
+      position: absolute;
+      top: 0;
+      left: 1rem;
+      padding-top: 1rem;
+      text-transform: uppercase;
+      font-size: 5.5rem;
+      background-color: rgba(0, 0, 0, 0);
+      text-shadow:  0px 4px #363635, 
+        -3px 0px 4px #363635, 
+        0px 4px 4px #363635;
+        margin-top: 2rem;
+    }
+
+    .banner-subtext {
+      position: absolute;
+      left: 1rem;
+      top: 1rem;
+    }
+  }
+
+  @media (min-width: 50em) {
+    .background-banner h1 {
+      font-size: 7rem;
+    }
+
+    /* .banner-subtext {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    } */
+    
+  }
+
+
    /* Footer
   --------------------------------------------- */
-  /* footer{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-    height: auto;
-    width: 100vw;
-    padding-top: 1rem;
-    color: #fff;
-} */
+
 
 footer {
   display: flex;
