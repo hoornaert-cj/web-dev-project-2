@@ -79,7 +79,7 @@ body{
   /*--------------------------------------------------------------
   # Components
   --------------------------------------------------------------*/
-  h1, h2 {
+  h1, h2, h3 {
     color: #000000;
     font-family: 'Italiana', sans-serif;
     font-weight: bold;
@@ -94,7 +94,10 @@ body{
   h2 { 
     font-size: 3rem; 
   }
-
+  
+  h3 {
+    font-size: 2rem;
+  }
   p {
     padding: 0 1rem;
   }
@@ -324,11 +327,29 @@ body{
     0px 2px 2px #363635;
 }
 
+.intro {
+  border-bottom: 3px double #000000;
+  padding-bottom: 1rem;
+}
+
+
 .grid-attractions {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 1rem;
+}
+
+.grid-attractions img {
+  display: block;
+   width: 100%;
+   max-width: 500px; /*actual image width*/
+   height: auto; /* maintain aspect ratio*/
+   margin: auto; /*optional centering of image*/
+}
+.grid-photos {
+  border-bottom: 0.1rem solid #000000;
+  padding-bottom: 1.5rem;
 }
 
 @media (min-width: 37.5em) {
@@ -355,7 +376,7 @@ body{
     }
 }  
 
-@media (min-width: 58em) {
+@media (min-width: 62.5em) {
   .grid-attractions {
     /* position: relative;
     display: grid;
@@ -370,10 +391,12 @@ body{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;
-    gap: 3rem 1rem;
+    gap: 3rem 1.5rem;
     margin: 1rem;
+    padding: 1rem;
     /* height: 100vh; */
     overflow: hidden;
+    
   }
 
   .grid-attractions div, .grid-parks div {
@@ -381,6 +404,7 @@ body{
 		width: 100%;
 		height: 100%;
 		background-color: #ffffff;
+    padding-bottom: 1rem;
 	}
 
   .grid-attractions div:first-of-type, .grid-parks div:first-of-type {
@@ -428,17 +452,50 @@ body{
     object-fit: cover;
     overflow: hidden;
     }
+
+  .grid-attractions-text{
+      position: relative;
+    }
+
+    .grid-photos {
+      border-bottom: 1px solid transparent;
+    }
+
+  .casa-loma-text p::after,
+  .royal-ontario-text p::after
+  {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: -220%;
+    width: 325%;
+    height: 1px;
+    background-color: black;
+    
+  }
+
+  .cn-tower-text p::after,
+  .theatre-text p::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    right: -220%;
+    width: 325%;
+    height: 1px;
+    background-color: black;
+  }
 }
 
- /* Park
+ /* Park/Attractions
 --------------------------------------------- */
-.park-intro h3{
+.intro h3{
   padding: 0 1rem;
   text-align: center;
+  text-decoration: underline;
 }
 
 @media (min-width: 37.5em) {
-  .park-intro {
+  .intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
