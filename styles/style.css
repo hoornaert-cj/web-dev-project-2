@@ -324,6 +324,13 @@ body{
     0px 2px 2px #363635;
 }
 
+.grid-attractions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem;
+}
+
 @media (min-width: 37.5em) {
   .page-header h1 {
     font-size: 5rem;
@@ -333,36 +340,6 @@ body{
     text-shadow:  0px 4px #000000, 
     -4px 0px 4px #000000, 
     0px 4px 4px #000000;
-  }
-
-  .grid-attractions, .grid-parks {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr repeat(2, 15.5rem) 1fr;
-    grid-template-rows: auto;
-    gap: 1.5rem;
-    margin: 1rem;
-  }
-
-  .grid-attractions, .grid-parks div {
-		display: block;
-		width: 100%;
-		height: 100%;
-		background-color: #ffffff;
-	}
-
-  .grid-attractions div:first-of-type, .grid-parks div:first-of-type {
-		grid-column: 2/3;
-	}
-
-  .grid-attractions .yonge-square {
-    grid-row: 2/3;
-		grid-column: 2/3;
-  }
-
-  .grid-attractions .royal-ontario {
-    grid-row: 2/3;
-		grid-column: 3/4;
   }
 }
 
@@ -376,15 +353,81 @@ body{
     -5px 0px 5px #000000, 
     0px 5px 5px #000000;
     }
+}  
 
+@media (min-width: 58em) {
   .grid-attractions {
-    position: relative;
+    /* position: relative;
     display: grid;
-    grid-template-columns: 1fr repeat(2, 21rem) 1fr;
-    grid-template-rows: auto;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: minmax(150px, auto);
     gap: 1.5rem;
-    margin: 1rem;
+    margin: 1rem; */
   }
+
+  .grid-attractions, .grid-parks {
+    /* position: relative; */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    gap: 3rem 1rem;
+    margin: 1rem;
+    /* height: 100vh; */
+    overflow: hidden;
+  }
+
+  .grid-attractions div, .grid-parks div {
+		display: block;
+		width: 100%;
+		height: 100%;
+		background-color: #ffffff;
+	}
+
+  .grid-attractions div:first-of-type, .grid-parks div:first-of-type {
+		grid-column: 2/3;
+	}
+
+  .grid-attractions .cn-tower-photo {
+    grid-column: 3 / span 2;
+    grid-row: 1/2;
+  }
+
+  .grid-attractions .casa-loma-text {
+    grid-column: 4/5;
+    grid-row: 2/3;
+  }
+
+  .grid-attractions .casa-loma-photo {
+    grid-column: 2/4;
+    grid-row: 2/3;
+  }
+
+  .grid-attractions .theatre-text {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+  .grid-attractions .theatre-photo {
+    grid-column: 3/5;
+    grid-row: 3/4;
+  }
+
+  .grid-attractions .royal-ontario-text {
+    grid-column: 4/5;
+    grid-row: 4/5;
+  }
+
+  .grid-attractions .royal-ontario-photo {
+    grid-column: 2/4;
+    grid-row: 4/5;
+  }
+
+  .grid-attractions img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    }
 }
 
  /* Park
