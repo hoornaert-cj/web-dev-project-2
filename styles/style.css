@@ -352,6 +352,10 @@ body{
   padding-bottom: 1.5rem;
 }
 
+.attractions-table {
+  margin: 0 0.5rem;
+}
+
 @media (min-width: 37.5em) {
   .page-header h1 {
     font-size: 5rem;

@@ -1,0 +1,57 @@
+table, th, td {
+    border: 1px solid #000;
+  }
+
+/* table, th {
+    border-radius: 1rem;
+} */
+
+th, td {
+    padding: 0.5rem;
+}
+
+td {
+    background-color: #CCE6F4;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+
+.table-header {
+    background-color: #053a4c;
+    font-family: 'Italiana', sans-serif;;
+    color: #ffffff;
+    font-size: 1.8rem;
+  }
+
+.tname {
+    text-align: center;
+    text-decoration: underline;
+  }
+
+tname hover {
+    background-color: #ffffff;
+}
+
+/* created round corner of the <td> elements that are on the outside of the table */
+.td-first-col1 {
+    border-top-left-radius: 1rem;
+}
+
+.td-first-col2 {
+    border-top-right-radius: 1rem;
+}
+
+.td-last-col1 {
+    border-bottom-left-radius: 1rem;
+}
+
+.td-last-col2 {
+    border-bottom-right-radius: 1rem;
+}
+
+
