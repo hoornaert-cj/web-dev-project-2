@@ -50,7 +50,7 @@
             <!-- <section class = "credits-bg"></section> -->
 
             <section class="source-tables">
-                <h3>Homepage</h3>
+                <h2>Homepage</h2>
                 <table class="table-homepage">
                     <tr>
                       <th>Description</th>
@@ -69,6 +69,35 @@
                     </tr>
                   </table>
             </section>
+
+            <section class="contact-us">
+                <h2>Contact Us</h2>
+                <p>For more friendly information about Toronto or anything else you saw on this site, please contact us using the form below!</p>
+            </section>
+            <section>
+              <div class="contact-form">
+                <form action="contact-form" method="post">
+                  <ul>
+                    <li>
+                      <label for="name">Name:</label>
+                      <input type="text" id="name" name="cust_name"/>
+                    </li>
+                    <li>
+                      <label for="email">Email:</label>
+                      <input type="email" id="email" name="cust_email"/>
+                    </li>
+                    <li>
+                      <label for="comments">Comments:</label>
+                      <textarea name="cust_comment" id="comments" cols="30" rows="10"></textarea>
+                    </li>
+                  </ul>
+                </form>
+              </div>
+              <div class="contact-image">
+                <img src="images/credits-friendly.jpg" alt="Friendly helpers await your inquiries.">
+              </div>
+            </section>
+
         </main>
         
 
