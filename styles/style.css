@@ -306,7 +306,7 @@ body{
     }    
   }
 
-  /* Attractions
+  /* Attractions/Parks
 --------------------------------------------- */
 .page-header {
   position: relative;
@@ -333,14 +333,15 @@ body{
 }
 
 
-.grid-attractions {
+.grid-attractions, grid-parks {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 1rem;
+  margin-bottom: 2rem;
 }
 
-.grid-attractions img {
+.grid-attractions img, grid-parks img {
   display: block;
    width: 100%;
    max-width: 500px; /*actual image width*/
@@ -411,53 +412,69 @@ body{
     padding-bottom: 1rem;
 	}
 
-  .grid-attractions div:first-of-type, .grid-parks div:first-of-type {
+  .grid-attractions div:first-of-type, 
+  .grid-parks div:first-of-type {
 		grid-column: 2/3;
 	}
 
-  .grid-attractions .cn-tower-photo {
+  .grid-attractions .grid1-photo,
+  .grid-parks .grid1-photo
+   {
     grid-column: 3 / span 2;
     grid-row: 1/2;
   }
 
-  .grid-attractions .casa-loma-text {
+  .grid-attractions .grid2-text,
+  .grid-parks .grid2-text 
+  {
     grid-column: 4/5;
     grid-row: 2/3;
   }
 
-  .grid-attractions .casa-loma-photo {
+  .grid-attractions .grid2-photo,
+  .grid-parks .grid2-photo
+   {
     grid-column: 2/4;
     grid-row: 2/3;
   }
 
-  .grid-attractions .theatre-text {
+  .grid-attractions .grid3-text,
+  .grid-parks .grid3-text 
+  {
     grid-column: 2/3;
     grid-row: 3/4;
   }
 
-  .grid-attractions .theatre-photo {
+  .grid-attractions .grid3-photo,
+  .grid-parks .grid3-photo {
     grid-column: 3/5;
     grid-row: 3/4;
   }
 
-  .grid-attractions .royal-ontario-text {
+  .grid-attractions .grid4-text,
+  .grid-parks .grid4-text
+   {
     grid-column: 4/5;
     grid-row: 4/5;
   }
 
-  .grid-attractions .royal-ontario-photo {
+  .grid-attractions .grid4-photo,
+  .grid-parks .grid4-photo
+   {
     grid-column: 2/4;
     grid-row: 4/5;
   }
 
-  .grid-attractions img{
+  .grid-attractions img,
+  .grid-parks img 
+  {
     width: 100%;
     height: 100%;
     object-fit: cover;
     overflow: hidden;
     }
 
-  .grid-attractions-text{
+  .grid-attractions-text, .grid-park-text{
       position: relative;
     }
 
@@ -465,8 +482,8 @@ body{
       border-bottom: 1px solid transparent;
     }
 
-  .casa-loma-text p::after,
-  .royal-ontario-text p::after
+  .grid2-text p::after,
+  .grid4-text p::after
   {
     content: '';
     position: absolute;
@@ -478,8 +495,8 @@ body{
     
   }
 
-  .cn-tower-text p::after,
-  .theatre-text p::after {
+  .grid1-text p::after,
+  .grid3-text p::after {
     content: '';
     position: absolute;
     top: 100%;
