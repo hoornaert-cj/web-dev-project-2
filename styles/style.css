@@ -123,6 +123,7 @@ body{
   }
 
   .site-header__wrapper {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -184,6 +185,11 @@ body{
     list-style-type: none;
     padding-right: 1rem;
   }
+
+  .nav-menu {
+    position: absolute;
+    right: 0;
+  }
   
   @media (min-width: 37.5em) {
       .menu-toggle {
@@ -226,9 +232,6 @@ body{
   }
   
   @media (min-width: 50em) {
-    /* .menu-toggle {
-          display: none;
-      } */
   
     .site-navigation a {
     font-size: 1.4rem;
@@ -298,6 +301,19 @@ body{
 
   /* Attractions/Parks
 --------------------------------------------- */
+.intro h3{
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
+blockquote {
+  background-color: #CCE6F4;
+  border: 2px solid #053a4c;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+}
 .page-header {
   position: relative;
 }
@@ -343,6 +359,10 @@ body{
   padding-bottom: 1.5rem;
 }
 
+.grid4-photo {
+  border-bottom: 0px solid #fff;
+}
+
 .attractions-table {
   margin: 0 0.5rem;
 }
@@ -357,6 +377,15 @@ body{
     -4px 0px 4px #000000, 
     0px 4px 4px #000000;
   }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 60%;
+  }
 }
 
 @media (min-width: 50em) {
@@ -370,7 +399,6 @@ body{
 
 @media (min-width: 62.5em) {
   .grid-attractions, .grid-parks {
-    /* position: relative; */
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;
@@ -487,28 +515,15 @@ body{
 .table-daytrips {
   margin-bottom: 2rem;
 }
-.intro h3{
-  padding: 0 1rem;
-  text-align: center;
-  text-decoration: underline;
-}
 
-@media (min-width: 37.5em) {
-  .intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    width: 60%;
-  }
-}
 
  
  /* Credits
 --------------------------------------------- */
 .credits-section {
   margin: 0 0.5rem 0 0.5rem;
+  border-bottom: 3px double #000000;
+  padding-bottom: 2rem;
 }
 
 .contact-us {
@@ -518,6 +533,7 @@ body{
   align-items: center;
   margin-bottom: 1.5rem;
   margin-top: 0;
+
 }
 
 .contact-intro {
@@ -525,16 +541,20 @@ body{
 }
 
 .contact-form {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .contact-image img{
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 37.5em) {
-  contact-intro p {
-    
+  .contact-us {
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
   }
 
 }

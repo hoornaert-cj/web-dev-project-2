@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Toronto Attractions</title>
 
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" sizes="any"> 
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+    <link rel="manifest" href="site.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
@@ -23,7 +25,7 @@
     <div class="site-wrapper">
         <header class="site-header">
             <div class="wrapper site-header__wrapper">
-                <a href="index.html" class="site-logo"><img src="images/to-favicon.svg" alt="Toronto TO logo"/></a>
+                <a href="index.html" class="site-logo"><img src="images/to-favicon-01.svg" alt="Toronto TO logo"></a>
                 <nav class="site-navigation" id="site-navigation">
                     <button class="menu-toggle" aria-controls="header-menu" aria-expanded="false" aria-label="Menu Toggle">
                         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
@@ -50,13 +52,18 @@
 
             <section class="attractions-intro intro">
                 <h2>Big City Sites</h2>
+                <blockquote cite="https://www.azquotes.com/quotes/topics/toronto.html">
+                    <p>My favourite city for nightlife is Toronto, as it has such a multicultural feel, with so many different restaurants and theatres.</p>
+                    <cite class="cite-center">-Chris Hadfield, Famous Astronaut</cite>
+                  </blockquote>
+                
                 <p>Canada's biggest city dazzles with attractions that run the gamut from the western hemisphere's tallest freestanding structure, the CN Tower, to reminders of Toronto's roaring past, such as the stately Casa Loma. Check out some of Toronto's best sites below.</p>
             </section>
 
             <section class="grid-attractions">
 				<div class="grid1-text grid-attractions-text">
 					<h3>CN Tower</h3>
-					<p>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Hic nihil alias commodi veritatis qui dolores aliquid numquam corporis eum fuga. Alias odit placeat veritatis nihil fugit aliquid sint enim voluptate!</p>
+					<p>Once the world's tallest freestanding structure, the CN Tower is still the tallest in the western hemisphere. And it continues to act as the enduring symbol of Toronto. A glimpse of the CN Tower says “I am in Toronto”. Don’t miss the breathtaking views from the viewing decks, either.</p>
 				</div>
                 <div class="grid1-photo grid-photos">
 					<img src="images/attractions-cn-tower2.jpg" alt="A photo of the CN Tower sandwiched between two towers.">
@@ -64,10 +71,10 @@
 
 				<div class="grid2-text grid-attractions-text">
 					<h3>Casa Loma</h3>
-					<p>Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Vel temporibus blanditiis voluptas dolores facilis amet, facere distinctio minima esse placeat quisquam molestiae doloremque aliquam perferendis labore explicabo, ea.</p>
+					<p>If the CN Tower is the definitive symbol of Toronto in the modern era, Casa Loma represents its heady past. This photogenic Gothic Revival mansion was built early in the 20th Century and is a testament to Toronto's explosive growth during that era. You can tour the grand interior or leisurely stroll through the well-maintained gardens.</p>
 				</div>
                 <div class="grid2-photo grid-photos">
-                        <img src="images/attractions_casa-loma_sm.jpg" alt="A photo of the CN Tower sandwiched between two towers.">
+                        <img src="images/attractions_casa-loma_sm.jpg" alt="Stately Casa Loma, a castle in the middle of a Canadian city.">
 				</div>
 
 				<div class="grid3-text grid-attractions-text">
@@ -76,7 +83,7 @@
 				</div>
 
                 <div class="grid3-photo grid-photos">
-					<img src="images/attractions-theatre.jpg" alt="The Mirvish Theatre is just one of many that entertain guests.">
+					<img src="images/attractions-theatre.jpg" alt="The Ed Mirvish Theatre is just one of many that entertain guests.">
 				</div>
 
 				<div class="grid4-text grid-attractions-text">
@@ -97,20 +104,20 @@
                       <th class="td-first-col2">Why You Must Go</th>
                     </tr>
                     <tr class="t-content">
-                        <td class="tname"><a href="https://www.niagarafallstourism.com/" onclick="">Niagara Falls</a></td>
+                        <td class="tname"><a href="https://www.niagarafallstourism.com/" target="_blank">Niagara Falls</a></td>
                         <td>These world famous waterfalls are but a short drive or train trip from Union Station in downtown Toronto</td>
                     </tr>
                     <tr class="t-content">
-                        <td class="tname">Niagara-on-the-Lake</td>
-                        <td>This picturesqure and quaint town is a good respite from the more commercial nature of Niagara Falls</td>
+                        <td class="tname"><a href="https://www.visitniagaracanada.com/region/niagara-on-the-lake/" target="_blank" >Niagara-on-the-Lake</a></td>
+                        <td>This picturesqure and quaint town is a good respite from large crowds in Niagara Falls</td>
                     </tr>
                     <tr class="t-content">
-                        <td class="tname">Stratford</td>
+                        <td class="tname"><a href="https://visitstratford.ca/" target="_blank">Stratford</a></td>
                         <td>Best known for its Shakespeare festival, Stratford features a quaint downtown and many charming B&Bs</td>
                     </tr>
                     <tr class="t-content">
-                        <td class="tname td-last-col1">Wasaga Beach</td>
-                        <td class="td-last-col2">White sand and features shallow and warm water--in the summers at least!</td>
+                        <td class="tname"><a href="https://www.wasagabeach.com/en/index.aspx" target="_blank">Wasaga Beach</a></td>
+                        <td class="td-last-col2">White sand beach and a lake that features shallow and warm water--in the summers at least!</td>
                     </tr>
                   </table>
             </section>
