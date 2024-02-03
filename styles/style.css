@@ -145,18 +145,21 @@ body{
   
   .site-navigation ul {
     list-style: none;
+    position: absolute;
     padding: 0;
     margin: 0;
     text-align: center;
     display: none;
-    top: 6.5rem; 
+    top: 3.5rem; 
     padding: 1rem 0 1rem 0;
   }
   
   
   .site-navigation.toggled ul {
     display: block;
-    background-color: #090C02;
+    background-color: #053a4c;
+    border-radius: 1rem;
+    padding-left: 1rem;
   }
   
   .site-navigation a {
