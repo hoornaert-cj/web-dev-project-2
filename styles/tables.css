@@ -1,10 +1,8 @@
 table, th, td {
     border: 1px solid #000;
+
   }
 
-/* table, th {
-    border-radius: 1rem;
-} */
 
 th, td {
     padding: 0.5rem;
@@ -14,10 +12,13 @@ td {
     background-color: #CCE6F4;
 }
 
+.tname a:hover {
+  background-color: #053a4c;
+  color: #ffffff;
+}
+
 table {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2rem;
+    margin: 0 auto;
     border-radius: 1rem;
 }
 
@@ -58,18 +59,24 @@ tname hover {
 form {
     border-radius: 5px;
     background-color: #f2f2f2;
-    padding: 2rem;
-    margin: 1rem;
-    width: 50%;
+    padding: 2rem 2rem 4rem 2rem;
+    margin: 0 auto;
+    width: 100%;
+    
 }
 
 form ul {
     list-style-type: none;
 }
 
+form ul li {
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+}
+
 input[type=text], [type=email], select, textarea{
     width: 100%;
-    padding: 12px;
+    padding: 1rem;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
@@ -77,7 +84,7 @@ input[type=text], [type=email], select, textarea{
  }
 
  label {
-    padding: 12px 12px 12px 0;
+    padding: 0.75rem 0.75rem 0.75rem 0;
     display: inline-block;
     align-items: center;
 
@@ -86,18 +93,23 @@ input[type=text], [type=email], select, textarea{
   input[type=submit] {
     background-color: #053a4c;
     color: white;
-    padding: 12px 20px;
+    padding: 0.75rem 1.5rem;
+    margin: 1rem 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    float: right;
+    float:right;
   }
 
-  @media screen and (max-width: 600px) {
+  /* @media screen and (max-width: 37.5em) {
     form, input[type=submit] {
       width: 100%;
       margin-top: 0;
     }
-  }
+  } */
+
+  
+
+  
 
 

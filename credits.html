@@ -33,7 +33,7 @@
                     </button>
         
                     <ul class="nav-menu" id="header-menu">  
-                        <li><a href="header.html">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="attractions.html">Attractions</a></li>
                         <li><a href="parks.html">Parks</a></li>
                     <li><a href="credits.html">Credits</a></li>
@@ -44,38 +44,81 @@
 
         <main>
             <section class="page-header">
-                <img src="images/credits_toronto.JPG" alt="A castle in the middle of Toronto">
+                <img src="images/credits_toronto.JPG" alt="A view south towards the CN Tower">
                 <h1>Credits</h1>
             </section>
 
-            <!-- <section class = "credits-bg"></section> -->
+            <section class="credits-intro intro">
+              <h2>Those Who Made It Possible</h2>
+              <p>This site came together thanks to the excellent work of many others whose photography and expertise brought this site to life. Below are some of the sources of photos, videos, and information that brought this site to life.</p>
+          </section>
 
-            <section class="source-tables">
-                <h2>Homepage</h2>
-                <table class="table-homepage">
-                    <tr>
-                      <th>Description</th>
-                      <th>Creator</th>
-                      <th>Source</th>
-                    </tr>
-                    <tr>
-                      <td>Drone Footage of Downtown Toronto</td>
-                      <td>Braeson Holland</td>
-                      <td>Pexels</td>
-                    </tr>
-                    <tr>
-                      <td>16</td>
-                      <td>14</td>
-                      <td>10</td>
-                    </tr>
-                  </table>
+          <section class="credits-section">
+          <h3>Sources of Media and Information</h3>
+          <table class="table-sources">
+              <tr class="table-header">
+                <th class="td-first-col1">Source</th>
+                <th class="td-first-col2">Description</th>
+              </tr>
+              <tr class="t-content">
+                  <td class="tname"><a href="https://www.pexels.com/video/drone-footage-of-downtown-toronto-canada-13580749/" onclick="">Braseon Holland</a></td>
+                  <td>Homepage: Drone footage of downtown Toronto</td>
+              </tr>
+              <tr class="t-content">
+                <td class="tname"><a href="https://chrishoornaert.com/" onclick="">Chris Hoornaert</a></td>
+                <td>Attractions: photos of Casa Loma</td>
+              </tr>
+              <tr class="t-content">
+                <td class="tname"><a href="https://www.pexels.com/photo/cn-tower-3127932" onclick="">Andre Furtado</a></td>
+                <td>Attractions: photo of CN Tower</td>
+              </tr>
+              <tr class="t-content">
+                <td class="tname"><a href="https://www.pexels.com/photo/a-woman-walking-in-front-of-the-ed-mirvish-theatre-6304763/" onclick="">Bekir Donmez </a></td>
+                <td>Attractions: photo of Mirvish Theatre</td>
+              </tr>
+              <tr class="t-content">
+                <td class="tname"><a href="https://www.pexels.com/photo/time-lapse-photography-of-cars-on-the-road-during-night-time-9714512//" onclick="">Patrick Leung </a></td>
+                <td>Attractions: photo of Royal Ontario Museum</td>
+              </tr>
+              <tr class="t-content">
+                <td class="tname"><a href="https://en.wikipedia.org/wiki/Royal_Ontario_Museum" onclick="">Wikipedia </a></td>
+                <td>Attractions: Royal Ontario Museum text</td>
+              </tr>
+              <tr class="t-content">
+                <td class="tname"><a href="https://www.planetware.com/toronto/toronto-day-trips-cdn-on-ontsr.htm#CDN-ON-ONST" onclick="">15 Top-Rated Day Trips from Toronto</a></td>
+                <td>Attractions: information about daytrips from Toronto</td>
+              </tr>
+              <tr class="t-content">
+                <td class="tname"><a href="https://www.bhoornaert.com/" onclick="">Brett Hoornaert</a></td>
+                <td>Parks: all photos courtesy of Brett Hoornaert</td>
+              </tr>
+              <tr class="t-content">
+                <td class="tname"><a href="https://en.wikipedia.org/wiki/Christie_Pits" onclick="">Wikipedia</a></td>
+                <td>Parks: Christie Pits Park text</td>
+              </tr>
+              <tr class="t-content">
+                <td class="tname"><a href="https://en.wikipedia.org/wiki/Trinity_Bellwoods_Park" onclick="">Wikipedia</a></td>
+                <td>Parks: Trinity Bellwoods Park text</td>
+              </tr>
+              <tr class="t-content">
+                <td class="tname"><a href="https://chrishoornaert.com/" onclick="">Chris Hoornaert</a></td>
+                <td>Credits: header image of CN Tower from near Casa Loma</td>
+              </tr>
+              <tr class="t-content">
+                <td class="tname td-last-col1"><a href="https://www.bhoornaert.com/" onclick="">Brett Hoornaert</a></td>
+                <td class="td-last-col2">Parks: Credits: photo of a friendly dog sitting on a traffic-free Bloor Street in Toronto</td>
+              </tr>
+              </tr>
+            </table>
+      </section>
+                
             </section>
-
             <section class="contact-us">
-                <h2>Contact Us</h2>
-                <p>For more friendly information about Toronto or anything else you saw on this site, please contact us using the form below!</p>
-            </section>
-            <section>
+              <h2>Contact Us</h2>
+                <p>For more friendly information about Toronto or for any comments, please contact us using the form below!</p>
+              <section class="contact-image">
+                <img src="images/credits-friendly.jpg" alt="Friendly helpers await your inquiries.">
+              </section>
               <div class="contact-form">
                 <form action="contact-form" method="post">
                   <ul>
@@ -96,9 +139,6 @@
                     </li>
                   </ul>
                 </form>
-              </div>
-              <div class="contact-image">
-                <img src="images/credits-friendly.jpg" alt="Friendly helpers await your inquiries.">
               </div>
             </section>
 
