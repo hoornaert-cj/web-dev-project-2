@@ -58,8 +58,8 @@ body{
   --------------------------------------------- */
   a,
   a:visited { 
-      color: #090C02;
-      text-decoration: none;
+      color: #2632b3;
+      text-decoration: underline;
   }
 
 
