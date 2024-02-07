@@ -183,6 +183,10 @@ body{
       border: 0;
       outline: 1px dotted;
   }
+
+  .toggle-color {
+    fill: white;
+  }
   
   .site-navigation ul li {
     list-style-type: none;

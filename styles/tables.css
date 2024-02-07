@@ -1,3 +1,5 @@
+/* this CSS was created to style any tables and forms within index.html, attractions.html, parks.html or credits.html */
+
 table, th, td {
     border: 1px solid #000;
   }
